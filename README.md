@@ -3,11 +3,11 @@
     alt="Electron Docking"
     height="100"
     align="right"
-    style="margin-top: 10px;"
+    class="mt-2"
     />
 
     ╔╦╗╔═╗╔═╗╦╔═╦╔╗╔╔═╗  v 0.1.0
-    ║║║ ║║  ╠╩╗║║║║║ ╦
+     ║║║ ║║  ╠╩╗║║║║║ ╦
     ═╩╝╚═╝╚═╝╩ ╩╩╝╚╝╚═╝
 
 _Allows you to setup sticky windows for Electron apps_
@@ -23,9 +23,23 @@ _Allows you to setup sticky windows for Electron apps_
     <img src="https://img.shields.io/twitter/follow/mattkenefick.svg?style=social&logo=twitter" alt="follow on Twitter"></a>
 </a>
 
+
 ## Install
 
     $ npm install electron-docking --save
+
+
+## Test
+
+    $ npm run start
+
+
+## Configure
+
+    const dock = new Dockable({
+        useCorners: true,
+    });
+
 
 ## License
 

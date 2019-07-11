@@ -1,7 +1,7 @@
 {
-  "name": "electron-dockable",
+  "name": "electron-docking",
   "version": "0.1.0",
-  "description": "An example application that demonstrates sticky windows/window dockable.",
+  "description": "An example application that demonstrates sticky/dockable windows.",
   "main": "example/index.js",
   "scripts": {
     "copy": "cp -R src example/app/script/lib",
