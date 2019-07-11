@@ -1,12 +1,12 @@
 
 <img src="./docs/icon-256.png"
     alt="Electron Docking"
-    height="100"
     align="right"
     class="mt-2"
+    height="100"
     />
 
-    ╔╦╗╔═╗╔═╗╦╔═╦╔╗╔╔═╗  v 0.1.0
+    ╔╦╗╔═╗╔═╗╦╔═╦╔╗╔╔═╗  v 0.1.1
      ║║║ ║║  ╠╩╗║║║║║ ╦
     ═╩╝╚═╝╚═╝╩ ╩╩╝╚╝╚═╝
 

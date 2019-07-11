@@ -114,4 +114,4 @@ class Dockable {
     }
 }
 
-export default Dockable
+module.exports = Dockable;

@@ -9,7 +9,7 @@ const npjoin = require("path").join;
 const es6Path = npjoin(__dirname, "app");
 
 // Constants
-const DEBUG_MODE = process.env.DEBUG === "true"
+const DEBUG_MODE = process.env.DEBUG === "true";
 const INDEX_FILEPATH = process.env.INDEX_FILEPATH || "./app/index.html";
 const WINDOW_HEIGHT = parseInt(process.env.WINDOW_HEIGHT) || 300;
 const WINDOW_WIDTH = parseInt(process.env.WINDOW_WIDTH) || 600;
@@ -18,15 +18,20 @@ const WINDOW_WIDTH = parseInt(process.env.WINDOW_WIDTH) || 600;
 let mainWindow;
 
 // Setup
-protocol.registerSchemesAsPrivileged([
-    {
-        scheme: "es6",
-        privileges: {
-            standard: true,
-            secure: true
+if (protocol["registerStandardSchemes"]) {
+    protocol.registerStandardSchemes(["es6"]);
+}
+else {
+    protocol.registerSchemesAsPrivileged([
+        {
+            scheme: "es6",
+            privileges: {
+                standard: true,
+                secure: true
+            }
         }
-    }
-]);
+    ]);
+}
 
 
 /**
@@ -52,9 +57,6 @@ function Handle_CreateWindow() {
     if (mainWindow == null) {
         createAndLoadWindow();
     }
-
-    // Create two windows
-    // createWindow(INDEX_FILEPATH);
 }
 
 function Handle_OnReady() {

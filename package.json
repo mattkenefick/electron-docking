@@ -1,13 +1,12 @@
 {
   "name": "electron-docking",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An example application that demonstrates sticky/dockable windows.",
   "main": "example/index.js",
   "scripts": {
     "copy": "cp -R src example/app/script/lib",
     "export": "cp -R example/app/script/lib/* src",
-    "start": "electron example/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "electron example/app.js"
   },
   "keywords": [
     "dockable",
