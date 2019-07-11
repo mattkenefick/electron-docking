@@ -1,0 +1,28 @@
+{
+  "name": "electron-dockable",
+  "version": "0.1.0",
+  "description": "An example application that demonstrates sticky windows/window dockable.",
+  "main": "example/index.js",
+  "scripts": {
+    "copy": "cp -R src example/app/script/lib",
+    "export": "cp -R example/app/script/lib/* src",
+    "start": "electron example/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dockable",
+    "docking",
+    "sticky",
+    "electron"
+  ],
+  "author": {
+    "email": "matt@polymermallard.com",
+    "name": "Matt Kenefick",
+    "url": "https://github.com/mattkenefick"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "electron": "^5.0.6"
+  }
+}
