@@ -1,5 +1,10 @@
 
-<img src="./docs/icon-256.png" alt="logo" height="90" align="right" />
+<img src="./docs/icon-256.png"
+    alt="Electron Dockable"
+    height="100"
+    align="right"
+    style="margin-top: 10px;"
+    />
 
     ╔╦╗╔═╗╔═╗╦╔═╔═╗╔╗ ╦  ╔═╗  v 0.1.0
      ║║║ ║║  ╠╩╗╠═╣╠╩╗║  ║╣
